@@ -5,7 +5,8 @@
  */
 
 import { defineComponent } from 'vue';
-const Component: ReturnType<typeof defineComponent>;
+
+type Component = ReturnType<typeof defineComponent>
 
 export const ActivityIcon: Component;
 export const AirplayIcon: Component;
