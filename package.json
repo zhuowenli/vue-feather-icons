@@ -1,18 +1,20 @@
 {
-  "name": "vue-feather-icons",
-  "version": "4.22.0",
+  "name": "@zhuowenli/vue-feather-icons",
+  "version": "5.0.1",
   "description": "Simply beautiful open source icons as Vue functional components.",
   "repository": {
-    "url": "egoist/vue-feather-icons",
+    "url": "zhuowenli/vue-feather-icons",
     "type": "git"
   },
   "main": "dist/vue-feather-icons.cjs.js",
   "cdn": "dist/vue-feather-icons.min.js",
   "unpkg": "dist/vue-feather-icons.min.js",
   "module": "dist/vue-feather-icons.es.js",
+  "types": "types/index.d.ts",
   "files": [
     "dist",
-    "icons"
+    "icons",
+    "types"
   ],
   "sideEffects": false,
   "scripts": {
@@ -25,17 +27,15 @@
     "build:example": "poi --prod --config example/poi.config.js",
     "prebuild:example": "npm run build:icons"
   },
-  "author": "egoist <0x142857@gmail.com>",
+  "author": "zhuowenli <zhuowenligg@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "babel-helper-vue-jsx-merge-props": "^2.0.2"
-  },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
+    "@hcysunyang/babel-plugin-vue-next-jsx": "^0.3.0",
     "bili": "^3.4.2",
     "eslint-config-rem": "^4.0.0",
-    "feather-icons": "^4.10.0",
+    "feather-icons": "^4.28.0",
     "fs-extra": "^8.0.1",
     "lodash.kebabcase": "^4.1.1",
     "marked": "^0.6.0",
@@ -44,18 +44,10 @@
     "prismjs": "^1.6.0",
     "typeface-nunito": "^0.0.72",
     "v-tippy": "^1.0.0",
-    "vue": "^2.5.22",
     "vue-github-badge": "^1.0.1",
     "vue-template-compiler": "^2.5.22"
   },
-  "babel": {
-    "presets": [
-      [
-        "poi/babel",
-        {
-          "jsx": "vue"
-        }
-      ]
-    ]
+  "dependencies": {
+    "vue": "^3.0.0-beta.20"
   }
 }
