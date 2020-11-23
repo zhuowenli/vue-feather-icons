@@ -48,6 +48,6 @@
     "vue-template-compiler": "^2.5.22"
   },
   "dependencies": {
-    "vue": "^3.0.0-beta.20"
+    "vue": "^3.0.0"
   }
 }
